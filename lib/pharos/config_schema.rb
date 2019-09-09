@@ -136,6 +136,7 @@ module Pharos
             optional(:known_peers).each(type?: String)
             optional(:password).filled(:str?)
             optional(:ipalloc_default_subnet).filled(:str?)
+            optional(:ipalloc_init).filled(included_in?: %w(observer))
             optional(:no_masq_local).filled(:bool?)
           end
           optional(:calico).schema do

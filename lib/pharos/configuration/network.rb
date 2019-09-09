@@ -13,6 +13,7 @@ module Pharos
         attribute :known_peers, Pharos::Types::Array.of(Pharos::Types::String)
         attribute :password, Pharos::Types::Strict::String.optional
         attribute :ipalloc_default_subnet, Pharos::Types::Strict::String.optional
+        attribute :ipalloc_init, Pharos::Types::Strict::String.optional
 
         # @param routes [Array<Pharos::Configuration::Route>]
         # @return [Array<Pharos::Configuration::Route>]
